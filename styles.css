@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* свойстве которое позволяет не изменять масштаб при добавлени каких либо отступов, бордеров и тд */ 
+  font-family: "Ubuntu", sans-serif;
+}
+    
+body {
+  background: #fff;
+  color: #333;
+}
+    
+header {
+  background-color: #666;
+  color: #fff;
+  padding: 100px 0px 80px 0px;
+  display: flex;
+  flex-direction: column; /* поменяли направление оси на колонны */
+  justify-content: space-between; /* одинаковое промежуток между элементами */
+  align-items: center;
+  text-align: center;
+}
+    
+header h1 {
+  font-size: 3.5rem;
+  margin: 15px 0px 30px 0px;
+  font-weight: lighter;
+}
+
+header h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  opacity: 60%;
+}
+    
+header h6 {
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+}
+
+.video-button {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px 0px;
+  cursor: pointer;
+}
+
+.play-icon {
+  width: 90px;
+  height: 90px;
+  border: 13px solid #ccc;
+  border-radius: 100%;
+  position: relative; /* позволяет двигать элемент без вреда для соседних элементов */
+}
+
+.play-icon::before {
+  content: ''; /* псевдоэлемент без текста */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  width: 0;
+  height: 0; /* создаём треугол */
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #ccc;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  flex-wrap: wrap; /* сноска на след строку блок */
+}
+    
+.subscribe input,
+.subscribe button {
+  padding: 10px;
+  font-size: 1rem;
+  height: 42px;
+  border: none;
+}
+
+.subscribe button {
+  padding: 0 20px;
+  background: #00c9a7;
+  color: white;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 50px;
+  font-weight: lighter;
+  line-height: 25px;
+  opacity: 60%;
+}
+
+.info a {
+  color: #00c9a7;
+  text-decoration: none;
+  font-weight: bold;
+}
+    
+.main-nav {
+  display: flex;
+  justify-content: center; /* горизонтальнео выравнивание */
+  align-items: center; /* вертикальное выравнивание */
+  background: #f5f5f5;
+  padding: 15px 20px;
+  box-shadow: 0px 2px 10px rgb(185, 185, 185);
+}
+
+.logo img{
+  width: 60px;
+  margin-right: 30px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 350px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.features {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.smile img{
+  width: 60px;
+  opacity: 50%;  
+}
+    
+.features h2 {
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+    
+.features h6 {
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  margin: 30px 0px 15px 0px;
+  opacity: 50%;
+}
+
+.feature-items {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+    
+.feature-item {
+  max-width: 320px;
+}
+    
+.feature-item h3 {
+  margin: 25px 0 15px;
+  font-size: 1.5rem;
+  opacity: 70%;
+}
+    
+.feature-item p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons, .social-icons img, .logo img{
+    margin: 10px 0px 10px 0px;
+  }
+}
