@@ -13,7 +13,6 @@ body {
 header {
   background-color: #666;
   color: #fff;
-  padding: 100px 0px 100px 0px;
   display: flex;
   flex-direction: column; /* поменяли направление оси на колонны */
   justify-content: space-between; /* одинаковое промежуток между элементами */
@@ -22,69 +21,53 @@ header {
 }
     
 header h1 {
-  font-size: 3.5rem;
-  margin: 20px 0px 30px 0px;
+  font-size: 55px;
+  margin: 35px 0px 35px 0px;
   font-weight: lighter;
 }
 
 header h3 {
-  font-size: 1.5rem;
+  font-size: 23px;
   font-weight: lighter;
+  margin-bottom: 71px;
 }
     
 header h6 {
-  font-size: 0.9rem;
-  letter-spacing: 3px;
+  font-size: 13px;
+  letter-spacing: 3.43px;
 }
 
-.video-button {
+.banner-content {
+  margin: 113.5px 0px 87px 0px;
+}
+
+.slider-after {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* чтобы не по центру */
+  margin-bottom: 94px;
+}
+
+.form-group {
   display: flex;
   justify-content: center;
-  margin: 70px 0 100px 0px;
-  cursor: pointer;
-}
-
-.play-icon {
-  width: 110px;
-  height: 110px;
-  border: 15px solid #ffffff;
-  border-radius: 100%;
-  position: relative; /* позволяет двигать элемент относительно своего места */
-}
-
-.play-icon::before {
-  content: ''; /* псевдоэлемент без текста */
-  position: absolute; /* позволяет двигать элемент относительно своего родителя */
-  top: 50%;
-  left: 50%;
-  transform: translate(-35%, -50%);
-  width: 0;
-  height: 0; /* создаём треугол */
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 40px solid #ffffff;
-}
-
-.subscribe {
-  display: flex;
-  justify-content: center;
-  gap: 1px;
-  flex-wrap: wrap; /* сноска на след строку блок */
+  flex-wrap: wrap;
+  margin-bottom: 47px;
 }
     
-.subscribe input {
+.slider-after input {
   padding-left: 40px;
   font-size: 1rem;
-  height: 50px;
-  width: 210px;
+  height: 53px;
+  width: 233px;
   border: none;
 }
 
-.subscribe button {
+.slider-after button {
   padding: 0 20px;
   font-size: 1rem;
-  height: 50px;
-  width: 150px;
+  height: 53px;
+  width: 163px;
   background: #00c9a7;
   color: white;
   cursor: pointer;
@@ -92,9 +75,10 @@ header h6 {
 }
 
 .info {
-  margin-top: 50px;
   font-weight: lighter;
   line-height: 25px;
+  font-size: 15px;
+  width: 100%;
 }
 
 .info a {
@@ -108,7 +92,7 @@ header h6 {
   justify-content: center; /* горизонтальнео выравнивание */
   align-items: center; /* вертикальное выравнивание */
   background: #f5f5f5;
-  padding: 5px 20px;
+  padding: 4px 20px;
   box-shadow: 0px 2px 10px rgb(185, 185, 185);
 }
 
