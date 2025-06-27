@@ -14,7 +14,7 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   display: flex;
-  flex-direction: column; /* поменяли направление оси на колонны */
+  flex-direction: column;
   text-align: center;
 }
     
