@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+    
+body {
+  background: #fff;
+  color: #4C4C4C;
+  max-width: 1600px;
+  min-width: 870px;
+}
+    
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+    
+header h1 {
+  font-size: 56px;
+  margin: 35px 0px 35px 0px;
+  font-weight: normal;
+}
+
+header h3 {
+  font-size: 24px;
+  margin-bottom: 71px;
+  font-weight: lighter;
+}
+    
+header h6 {
+  font-size: 14px;
+  letter-spacing: 3.43px;
+  font-weight: bold;
+}
+
+.banner-content {
+  margin: 113px 0px 87px 0px;
+}
+
+.banner-content img {
+  cursor: pointer;
+}
+
+.slider-after {
+  margin-bottom: 97px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+    
+.slider-after input {
+  padding-left: 40px;
+  font-size: 17px;
+  height: 53px;
+  width: 233px;
+  border: none;
+}
+
+.slider-after button {
+  padding: 0 37px;
+  font-size: 17px;
+  height: 53px;
+  width: 163px;
+  background: #00c9a7;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.info {
+  font-weight: lighter;
+  line-height: 27px;
+  font-size: 16px;
+}
+
+.info a {
+  color: #00c9a7;
+  text-decoration: none;
+  font-weight: lighter;
+}
+    
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgb(185, 185, 185);
+  padding: 6px 0px;
+}
+
+.logo img{
+  width: 65px;
+  margin-right: 32px;
+}   
+
+.menu-links {
+  display: flex;
+  gap: 29px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 370px;
+  padding: 0px 17px 0px 14px;
+  border-left: 1px solid #F3F3F3;
+  border-right: 1px solid #F3F3F3;
+  height: 51px;
+}
+
+.facebook {
+  height: 26px;
+  margin-right: 25px;
+}
+
+.twitter {
+  height: 21px;
+  margin-right: 18px;
+}
+
+.note {
+  width: 31px;
+}
+
+.features {
+  padding-top: 106px;
+  text-align: center;
+}
+    
+h2 {
+  margin-bottom: 98px;
+  font-size: 61px;
+  font-weight: lighter;
+}
+    
+.features h6 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin: 46px 0px 26px 0px;
+  opacity: 50%;
+}
+
+@media (max-width: 1100px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons, .social-icons img, .logo img{
+    margin: 10px 0px 10px 0px;
+    gap: 10px;
+  }
+}
